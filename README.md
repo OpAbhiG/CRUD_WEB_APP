@@ -2,6 +2,8 @@
 
 # MyPCOT Technologies CRUD Application
 
+HOST LINK: https://main--chimerical-rugelach-5df8ca.netlify.app/
+
 This CRUD (Create, Read, Update, Delete) application was developed as part of a technical assignment for MyPCOT Technologies. The application provides the following features:
 
 ## Features
