@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="create.css">
+    <title>Create/Edit Record</title>
+</head>
+<body>
+    <h1>Create/Edit Record</h1>
+    
+    <!-- Form for creating/editing a record -->
+    <form id="record-form">
+        <input type="hidden" id="record-id"> <!-- Hidden field for record ID (for editing) -->
+        <input type="text" id="record-name" placeholder="Name" required>
+        <textarea id="record-description" placeholder="Description" required></textarea>
+        
+        <!-- Dropdown for category (options will be populated dynamically) -->
+        <select id="record-category" required>
+            <!-- Options will be populated dynamically using JavaScript -->
+        </select>
+        
+        <label>
+            Active:
+            <input type="checkbox" id="record-active" checked>
+        </label>
+        <button type="submit">Save</button>
+    </form>
+
+    <!-- Display list of records (will be populated dynamically) -->
+    <div id="record-list">
+        <!-- Records will be displayed here -->
+    </div>
+
+    <script src="create.js"></script>
+</body>
+</html>
