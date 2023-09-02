@@ -8,7 +8,7 @@
 /* Apply a background color to the body */
 body {
     background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Style the container div */
@@ -29,12 +29,8 @@ body {
     box-shadow: 0px 0px 5px 0px #ccc;
 }
 
-/* Style form headings */
-h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #333;
-}
+
+
 
 /* Style form inputs */
 input[type="text"],
@@ -44,22 +40,35 @@ select,
 textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
-/* Style form buttons */
-button[type="submit"] {
+/* Rounded button styling */
+button[type="submit"],
+button {
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
+    border-radius: 10px;
+    padding: 10px 20px; /* Adjusted padding for a slightly smaller size */
     cursor: pointer;
-    font-size: 16px;
+    font-size: 15px; /* Slightly smaller font size */
+    transition: background-color 0.3s;
+    margin-top: 10px;
 }
+
+/* Hover effect for rounded buttons */
+button[type="submit"]:hover,
+button:hover {
+    background-color: #000000;
+}
+
+
+
+
 
 /* Style error messages */
 .error {
@@ -71,10 +80,10 @@ button[type="submit"] {
 
 /* Style active/inactive toggle */
 label {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 /* Style the record list container */
@@ -83,7 +92,7 @@ label {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
-    margin: 10px;
+    margin: 100px;
     box-shadow: 0px 0px 5px 0px #ccc;
 }
 
@@ -101,9 +110,26 @@ label {
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 20px;
-    margin: 10px;
+    padding: 15px;
+    margin: 100px;
     box-shadow: 0px 0px 5px 0px #ccc;
 }
 
-/* Additional styles for specific elements can be added as needed */
+
+
+
+
+
+
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin-top: 20px;
+    color: #333;
+    text-align: center; /* Center horizontally */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  
+}
