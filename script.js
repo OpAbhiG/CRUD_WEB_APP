@@ -3,6 +3,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const loginEmail = document.getElementById("login-email");
     const loginPassword = document.getElementById("login-password");
     const loginError = document.getElementById("login-error");
+    const loadingOverlay = document.getElementById("loading-overlay");
+
+    // Function to show the loading overlay
+    function showLoadingOverlay() {
+        loadingOverlay.style.display = "flex";
+    }
+
+    // Function to hide the loading overlay
+    function hideLoadingOverlay() {
+        loadingOverlay.style.display = "none";
+    }
 
     const registerForm = document.getElementById("register-form");
     const registerName = document.getElementById("register-name");
@@ -13,13 +24,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let registeredUsers = [];
 
-    loginForm.addEventListener("submit", (e) => {
+    loginForm.addEventListener("submit", async (e) => {
         e.preventDefault();
         const email = loginEmail.value;
         const password = loginPassword.value;
 
+        // Show loading overlay
+        showLoadingOverlay();
+
+        // Simulate a login delay (you can replace this with actual login logic)
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
         // Check if there is a matching user
         const user = registeredUsers.find((u) => u.email === email && u.password === password);
+
+        // Hide loading overlay
+        hideLoadingOverlay();
 
         if (!user) {
             loginError.textContent = "Invalid email or password.";
